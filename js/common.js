@@ -50,4 +50,26 @@ $('input[name="birthday1"], input[name="birthday2"]').daterangepicker({
   maxYear: parseInt(moment().format('YYYY'),10)
 });
 
+ var placeholder;
+  $(document).on('change', '.uploader-input', function() {
+    var input = $(this),
+        profilePicValue = input.val(),
+        fileNameStart = profilePicValue.lastIndexOf('\\'); /* finds the end of the filepath */
+    profilePicValue = profilePicValue.substr(fileNameStart + 1).substring(0, 20); /* isolates the filename */
+    placeholder = input.siblings('.form-control').find('.image').attr('src');
+    if (profilePicValue != '') {
+      input.siblings('.form-control').children('.uploader-text').html(profilePicValue);
+      input.closest('.koine-uploader').addClass('uploaded');
+    };
+    let file = this.files[0]; 
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      input.siblings('.form-control').find('.image').attr('src', e.target.result);
+    };
+    reader.readAsDataURL(file);
+  }).on('click', '.delete', function() {
+    $(this).closest('.koine-uploader').removeClass('uploaded').find('input[type="file"]').val('').siblings('.form-control').children('.uploader-text').html('Upload your auction license certificate');
+    $(this).closest('.koine-uploader').find('.image').attr('src', placeholder);
+  });
+
 });

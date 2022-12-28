@@ -19,6 +19,8 @@
 
 $transition: .3s
 
+$color-blue: #445678
+
 * 
 	outline: none !important
 
@@ -705,10 +707,6 @@ hr
 			.sidebar-1, .navbar-dashboard, .content
 				transform: translateX(250px)
 
-.daterangepicker
-	@media (max-width: 991.98px)
-		left: -230px !important		
-
 .sidebar-1, .navbar-dashboard, .content
 	transition: $transition
 
@@ -736,7 +734,7 @@ hr
 	bottom: 0
 	left: 0
 	max-height: 100vh
-	color: #445678
+	color: $color-blue
 	display: flex
 	flex-direction: column
 	z-index: 1040
@@ -791,7 +789,7 @@ hr
 					background: #f96114
 
 .sandwich-dashboard
-	color: #445678
+	color: $color-blue
 	display: block
 	cursor: pointer
 	padding: 0
@@ -864,11 +862,11 @@ hr
 	height: 46px
 	cursor: pointer
 	&::-webkit-input-placeholder
-		color: #445678
+		color: $color-blue
 	&::-moz-placeholder
-		color: #445678
+		color: $color-blue
 	&:-ms-input-placeholder
-		color: #445678
+		color: $color-blue
 	&:focus
 		box-shadow: 0 1px 3px rgba(0, 0, 0, .1)
 
@@ -895,14 +893,14 @@ hr
 			height: 14px
 			cursor: pointer
 			margin-right: 2px
-			border: 1px solid #445678
+			border: 1px solid $color-blue
 			border-radius: 100px
 			position: relative
 		&:checked
 			~ .f
 				transition: $transition
-				background: #445678
-				color: #445678
+				background: $color-blue
+				color: $color-blue
 				&:before 
 					content: ''
 					width: 10px
@@ -943,7 +941,7 @@ hr
 	background: #FFF
 	border-radius: 8px
 	text-align: center
-	color: #445678
+	color: $color-blue
 	height: 100%
 	display: flex
 	flex-direction: column
@@ -985,11 +983,11 @@ hr
 .comment-dashboard
 	font-family: 'NeuzeitGro-Black', sans-serif
 	font-size: 24px
-	color: #445678
+	color: $color-blue
 
 .title-more
 	font-size: 22px
-	color: #445678
+	color: $color-blue
 	font-weight: bold
 	text-transform: uppercase	
 
@@ -1045,7 +1043,7 @@ hr
 		overflow: hidden
 
 .w-1550
-	@media (min-width: 1950px)
+	@media (min-width: 1650px)
 		max-width: 1400px
 		margin-left: auto
 		margin-right: auto
@@ -1053,3 +1051,89 @@ hr
 		display: flex
 		@media (max-width: 1949.98px)
 			display: block 
+
+.add 
+	.form-control
+		padding-top: 4px
+		padding-bottom: 4px
+		height: 45px
+		border-radius: 8px
+		border: 0
+		box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .35)
+		font-size: 14px
+	.form-textarea
+		height: 125px
+		resize: none
+		padding: 12px
+		&.form-textarea-big
+			height: 400px
+
+.btn-create
+	background: #00a1fe
+	color: #FFF
+	border: 0
+	border-radius: 8px
+	font-size: 14px
+	padding: 12px 24px
+	transition: $transition
+	&:hover
+		color: #FFF
+		opacity: .7
+	&.btn-cancel
+		background: #e10700
+
+.koine-upload-container
+	border-radius: 8px
+	box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .35)
+	display: inline-block
+
+.koine-uploader
+	display: block
+	position: relative
+	overflow: hidden
+	margin: 0
+	cursor: pointer
+	&.uploaded
+		input
+			pointer-events: none
+	&.uploader-box
+		text-align: center
+		.form-control	
+			width: 200px
+			height: 200px
+			padding: 0
+			img 
+				width: 36px
+			.uploader-text-wrap
+				position: absolute
+				top: 50%
+				left: 0
+				right: 0
+				padding: 0 15px
+				transform: translateY(-50%)
+				transition: $transition
+				.uploader-text
+					display: block
+	.image 
+		width: 100% !important
+		height: 100%
+		object-fit: cover
+		position: relative
+		transition: $transition
+	input
+		position: absolute
+		visibility: hidden
+	.form-control
+		position: relative
+		overflow: hidden
+		background: #FFF
+		border: 0
+		.uploader-text
+			color: #000
+			font-size: 14px
+		.uploader-description
+			font-size: 14px
+			line-height: 17px
+			max-width: 238px
+			display: block
+			margin: 0 auto

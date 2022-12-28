@@ -735,10 +735,6 @@ hr {
       .body-dasboard.menubar-dashboard .sidebar-1, .body-dasboard.menubar-dashboard .navbar-dashboard, .body-dasboard.menubar-dashboard .content {
         transform: translateX(250px); } }
 
-@media (max-width: 991.98px) {
-  .daterangepicker {
-    left: -230px !important; } }
-
 .sidebar-1, .navbar-dashboard, .content {
   transition: 0.3s; }
 
@@ -1085,7 +1081,7 @@ hr {
   .o-hidden {
     overflow: hidden; } }
 
-@media (min-width: 1950px) {
+@media (min-width: 1650px) {
   .w-1550 {
     max-width: 1400px;
     margin-left: auto;
@@ -1095,5 +1091,89 @@ hr {
   @media (max-width: 1949.98px) {
     .w-1550.display-flex {
       display: block; } }
+
+.add .form-control {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 45px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.35);
+  font-size: 14px; }
+.add .form-textarea {
+  height: 125px;
+  resize: none;
+  padding: 12px; }
+  .add .form-textarea.form-textarea-big {
+    height: 400px; }
+
+.btn-create {
+  background: #00a1fe;
+  color: #FFF;
+  border: 0;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px 24px;
+  transition: 0.3s; }
+  .btn-create:hover {
+    color: #FFF;
+    opacity: 0.7; }
+  .btn-create.btn-cancel {
+    background: #e10700; }
+
+.koine-upload-container {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.35);
+  display: inline-block; }
+
+.koine-uploader {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer; }
+  .koine-uploader.uploaded input {
+    pointer-events: none; }
+  .koine-uploader.uploader-box {
+    text-align: center; }
+    .koine-uploader.uploader-box .form-control {
+      width: 200px;
+      height: 200px;
+      padding: 0; }
+      .koine-uploader.uploader-box .form-control img {
+        width: 36px; }
+      .koine-uploader.uploader-box .form-control .uploader-text-wrap {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+        transform: translateY(-50%);
+        transition: 0.3s; }
+        .koine-uploader.uploader-box .form-control .uploader-text-wrap .uploader-text {
+          display: block; }
+  .koine-uploader .image {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: 0.3s; }
+  .koine-uploader input {
+    position: absolute;
+    visibility: hidden; }
+  .koine-uploader .form-control {
+    position: relative;
+    overflow: hidden;
+    background: #FFF;
+    border: 0; }
+    .koine-uploader .form-control .uploader-text {
+      color: #000;
+      font-size: 14px; }
+    .koine-uploader .form-control .uploader-description {
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 238px;
+      display: block;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Koinesune</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-dasboard">
+
+	<aside class="sidebar-1">
+		<div class="sidebar-top">
+			<div class="row row-4 align-items-center">
+				<div class="col">
+					<a class="logo" href="#!">
+						<img src="img/logo-dashboard.png" alt="">
+						<span class="align-middle ml-2">CMS</span>
+					</a>
+				</div>
+				<div class="col-auto fz-0">
+					<button class="sandwich-dashboard" id="sandwich-dashboard">
+				    <span></span>
+				  </button>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-bottom">
+			<div class="story-switch mb-4">
+				<div class="row row-4 align-items-center">
+					<div class="col-6">
+						<a href="#!" class="new-story">NEW</a> 
+					</div>
+					<div class="col-6">
+						<select class="custom-select select-story">
+							<option selected="">Story</option>
+							<option value="1">Story 1</option>
+							<option value="2">Story 2</option>
+							<option value="3">Story 3</option>
+						  </select>
+					</div>
+				</div>
+			</div>
+			<nav class="accordion-wrap">
+				<div class="accordion" id="accordionExample">
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseOne">Stories</a>
+						<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+							<div class="mt-2 mb-4">
+								<div class="fz-14 mb-1">Published</div>
+								<div class="position-relative mb-2">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">To</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="position-relative">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">From</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="mt-4">
+									<div class="fz-14 mb-1">Story Tag</div>
+									<div class="form-group">
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1" checked="">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Beyond Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Spotlight</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">The Hub</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Editorial</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Rethinking Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Lessons Learned</span>
+	                  </label><br>
+	                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseTwo">Forum</a>
+						<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseThree">Events</a>
+						<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFour">Administration</a>
+						<div id="collapseFour" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</aside>
+
+	<header class="navbar navbar-dashboard fixed-top">
+		<a href="#!" class="avatar ml-auto" style="background-image: url(img/avatar.jpg)"></a>
+	</header>
+
+	<section class="section w-1550 display-flex">
+		<div class="content">
+			<div class="cart mb-5">
+        <div class="cart-content fz-14">
+					<h6 class="mb-3">New Story</h6>
+					<div class="font-weight-bold mb-2">Story Title</div>
+					<div class="mb-2">Add the title of the story</div>
+					<div class="add mb-4">
+						<input type="text" class="form-control" placeholder="">
+					</div>
+					<div class="font-weight-bold mb-2">Story Teaser</div>
+					<div class="mb-2">Add the story teaser. A teaser should me no more than three sentences long and include the story lede.</div>
+					<div class="add mb-4">
+						<textarea type="text" class="form-control form-textarea"></textarea>
+					</div>
+					<div class="font-weight-bold mb-2">Story Body</div>
+					<div class="mb-2">Add the story body.</div>
+					<div class="add mb-4">
+						<textarea type="text" class="form-control form-textarea form-textarea-big"></textarea>
+					</div>
+					<div class="font-weight-bold mb-2">Story Tags</div>
+					<div class="mb-2">Select a story tag.</div>
+					<div class="form-group">
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">Beyond Church</span>
+	          </label><br>
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">Spotlight</span>
+	          </label><br>
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">The Hub</span>
+	          </label><br>
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">Editorial</span>
+	          </label><br>
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">Rethinking Church</span>
+	          </label><br>
+	          <label class="form-check-label">       
+	            <input type="radio" name="keywords2">
+	            <span class="align-middle f"></span>
+	            <span class="align-middle title">Lessons Learned</span>
+	          </label><br>
+	        </div>
+					<div class="font-weight-bold mb-2">Story Image</div>
+					<div class="mb-2">Add an image by drag n drop or selecting the square below and selecting from your desktop. A story image is required even if you are adding a video.</div>
+					<div class="add mb-4">
+            <div class="koine-upload-container">
+              <label class="koine-uploader uploader-box">
+                <input type="file" class="uploader-input" name="fileUpload"/>
+                <span class="form-control">
+                  <span class="uploader-text-wrap">
+                    <span class="uploader-text">Add image</span>
+                  </span>
+                  <img src="img/placeholder.svg" alt="" class="image">
+                </span>
+              </label>
+            </div>
+					</div>
+					<div class="font-weight-bold mb-2">Story Video</div>
+					<div class="mb-2">Add an optional video URL.</div>
+					<div class="add mb-4">
+						<input type="text" class="form-control" placeholder="">
+					</div>	
+					<div class="row row-4 align-items-center">
+						<div class="col-auto">
+							<button class="btn btn-create">Create</button>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-create btn-cancel">Cancel</button>
+						</div>
+					</div>
+        </div>
+			</div>
+		</div>
+	</section>
+		
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
