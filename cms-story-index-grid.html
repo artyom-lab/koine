@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Koinesune</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-dasboard">
+
+	<aside class="sidebar-1">
+		<div class="sidebar-top">
+			<div class="row row-4 align-items-center">
+				<div class="col">
+					<a class="logo" href="#!">
+						<img src="img/logo-dashboard.png" alt="">
+						<span class="align-middle ml-2">CMS</span>
+					</a>
+				</div>
+				<div class="col-auto fz-0">
+					<button class="sandwich-dashboard" id="sandwich-dashboard">
+				    <span></span>
+				  </button>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-bottom">
+			<div class="story-switch mb-4">
+				<div class="row row-4 align-items-center">
+					<div class="col-6">
+						<a href="#!" class="new-story">NEW</a> 
+					</div>
+					<div class="col-6">
+						<select class="custom-select select-story">
+							<option selected="">Story</option>
+							<option value="1">Story 1</option>
+							<option value="2">Story 2</option>
+							<option value="3">Story 3</option>
+						  </select>
+					</div>
+				</div>
+			</div>
+			<nav class="accordion-wrap">
+				<div class="accordion" id="accordionExample">
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseOne">Stories</a>
+						<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+							<div class="mt-2 mb-4">
+								<div class="fz-14 mb-1">Published</div>
+								<div class="position-relative mb-2">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">To</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="position-relative">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">From</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="mt-4">
+									<div class="fz-14 mb-1">Story Tag</div>
+									<div class="form-group">
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1" checked="">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Beyond Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Spotlight</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">The Hub</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Editorial</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Rethinking Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Lessons Learned</span>
+	                  </label><br>
+	                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseTwo">Forum</a>
+						<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseThree">Events</a>
+						<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFour">Administration</a>
+						<div id="collapseFour" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</aside>
+
+	<header class="navbar navbar-dashboard fixed-top">
+		<a href="#!" class="avatar ml-auto" style="background-image: url(img/avatar.jpg)"></a>
+	</header>
+
+	<section class="section w-1550 display-flex">
+		<div class="content">
+			<div class="row align-items-center my-3">
+				<div class="col">
+					<h6 class="mb-0">Stories</h6>
+				</div>
+				<div class="col-auto">
+	        <div class="nav nav-tabs tabs-stories">
+	          <a class="nav-link black active" data-toggle="tab" href="#pill1">
+							<span class="d-inline-block align-middle mr-1">Index</span>
+							<span class="align-middle fz-0">
+								<img src="img/sandwich.png" alt="" width="16">
+							</span>
+	          </a>
+	          <a class="nav-link black" data-toggle="tab" href="#pill2">
+							<span class="d-inline-block align-middle mr-1">Grid</span>
+							<span class="align-middle fz-0">
+								<img src="img/grid.png" alt="" width="13">
+							</span>
+	          </a>
+	        </div> 
+				</div>
+			</div>
+			<div class="tab-content">
+			  <div class="tab-pane fade show active" id="pill1">
+			  	<div class="cart pt-3 flex-grow-1">
+						<div class="table-responsive pb-3">
+							<table class="table table-stories table-borderless">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Story Tag</th>
+										<th>Published</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Sed quas maiores</td>
+										<td class="name">Beyond Church</td>
+										<td class="date">Oct. 31, 2022</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Lorem, ipsum dolor sit amet consectetur, adipisicing elit</td>
+										<td class="name">The Hub</td>
+										<td class="date">Oct. 20, 2022</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae. Est beatae quas, obcaecati provident! Dolorum tenetur</td>
+										<td class="name">Spotlight</td>
+										<td class="date">Oct. 18, 2022</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae. Est beatae quas, obcaecati provident</td>
+										<td class="name">Lessons Learned</td>
+										<td class="date">Oct. 12, 2022</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium laudantium vel ipsam voluptatum nulla provident architecto asperiores dolorem, nobis numquam sequi</td>
+										<td class="name">Rethinking Church</td>
+										<td class="date">Oct. 9, 2022</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="pill2">
+					<div class="row">
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-2.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic aspernatur earum minima ducimus error consequuntur nihil tempora, exercitationem, velit.</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>Beyond Church</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-3.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, beatae, officiis. Illo, natus vitae totam tempora. Minus incidunt, aperiam dolorem magnam facere, illo veritatis omnis! Et nam eveniet fuga, tempore?</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>The Hub</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-4.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>The Hub</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-5.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic aspernatur earum minima ducimus error consequuntur nihil tempora, exercitationem, velit.</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>Lessons Learned</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-6.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, beatae, officiis. Illo, natus vitae totam tempora. Minus incidunt, aperiam dolorem magnam facere, illo veritatis omnis! Et nam eveniet fuga, tempore?</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>Rethinking Church</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 mb-4">
+							<div class="cart cart-small">
+								<div class="img-wrap">
+				          <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/dashboard-7.jpg)">
+				          </div>
+				        </div>
+				        <div class="block">
+				        	<h5><a href="#!" class="black">Lorem ipsum dolor sit amet</a></h5>
+					        <div class="d-flex fz-14 mt-auto">
+					        	<span>Editorial</span>
+					        	<span class="ml-auto">Oct. 31, 2022</span>
+					        </div>
+				        </div>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+		
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

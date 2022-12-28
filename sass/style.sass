@@ -1,0 +1,1054 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
+
+@font-face
+	font-family: 'Akkurat-Bold'
+	src: url('../fonts/Akkurat-Bold.ttf')
+	font-weight: 700
+@font-face
+	font-family: 'NeuzeitGro-Regular'
+	src: url('../fonts/NeuzeitGro-Regular.ttf')
+	font-weight: normal
+@font-face
+	font-family: 'NeuzeitGro-Bold'
+	src: url('../fonts/NeuzeitGro-Bold.ttf')
+	font-weight: 700
+@font-face
+	font-family: 'NeuzeitGro-Black'
+	src: url('../fonts/NeuzeitGro-Black.ttf')
+	font-weight: 900
+
+$transition: .3s
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+.text-black 
+	color: #000 !important
+
+.text-orange 
+	color: #E86B32 !important
+
+.text-blue
+	color: #445678 !important
+
+.text-gray 
+	color: #ABABAB !important
+
+.text-gray-2
+	color: #777777 !important
+
+body 
+	font-family: 'NeuzeitGro-Regular', sans-serif
+	background-color: #FFF
+	display: flex
+	color: #000
+	flex-direction: column
+	min-height: 100vh
+	&.menubar-in
+		overflow: hidden
+
+a 
+	text-decoration: none !important
+	transition: $transition
+	color: #445678
+	&:hover 
+		color: #445678
+		opacity: .7
+	&.black 
+		color: #000
+		&:hover 
+			color: #000	
+
+.container 
+	@media (min-width: 992px)
+		max-width: 950px
+	@media (min-width: 1220px)
+		max-width: 904px
+
+.fz-0
+	font-size: 0px
+.fz-10
+	font-size: 10px
+.fz-12
+	font-size: 12px
+.fz-13
+	font-size: 13px
+.fz-14
+	font-size: 14px
+.fz-15
+	font-size: 15px
+.fz-18
+	font-size: 18px
+.fz-19
+	font-size: 19px
+.fz-20
+	font-size: 20px
+.fz-22
+	font-size: 22px
+.fz-28
+	font-size: 28px
+.fz-32
+	font-size: 32px
+	@media (max-width: 575.98px) 
+		font-size: 27px
+.fz-34
+	font-size: 34px
+.fz-36
+	font-size: 36px
+.fz-40
+	font-size: 40px
+.fz-64
+	font-size: 64px
+	@media (max-width: 767.98px) 
+		font-size: 45px
+
+.font-weight-900
+	font-family: 'NeuzeitGro-Black', sans-serif
+
+.lh-12	
+	line-height: 1.2
+
+.ls 
+	letter-spacing: 1.5px
+
+.ls-2
+	letter-spacing: 1px
+
+.bl-1
+	@media (min-width: 1200px)
+		border-left: 1px solid #EAEAEA
+
+.br-1
+	@media (min-width: 992px)
+		border-right: 1px solid #EAEAEA
+
+.br-2
+	@media (min-width: 768px)
+		border-right: 1px solid #EAEAEA
+
+.bt-1
+	@media (min-width: 992px)
+		border-top: 1px solid #EAEAEA
+
+.bt-2
+	@media (max-width: 767.98px)
+		border-top: 1px solid #EAEAEA
+
+hr 
+	border-color: #EAEAEA
+
+.hr 
+	border-color: #D6D6D6
+
+.short-hr
+	display: inline-block
+	width: 31px
+	height: 1px
+	background: #E86B32
+
+.roboto
+	font-family: 'Roboto', sans-serif
+
+.akkurate
+	font-family: 'Akkurat-Bold', sans-serif
+
+.row-1
+	margin-left: -8px
+	margin-right: -8px
+	> [class*='col']
+		padding-left: 8px
+		padding-right: 8px
+
+.row-2
+	@media (min-width: 991px)
+		margin-left: -24px
+		margin-right: -24px
+		> [class*='col']
+			padding-left: 24px
+			padding-right: 24px
+
+.row-3
+	@media (min-width: 991px)
+		margin-left: -20px
+		margin-right: -20px
+		> [class*='col']
+			padding-left: 20px
+			padding-right: 20px
+
+.row-4
+	margin-left: -4px
+	margin-right: -4px
+	> [class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
+	a 
+		color: #445678
+
+.h1, h1
+	font-size: 42px
+	font-family: 'NeuzeitGro-Black', sans-serif
+	color: #445678
+	line-height: 1
+	@media (max-width: 575.98px) 
+		font-size: 30px
+
+.h2, h2
+	font-size: 40px
+	font-family: 'NeuzeitGro-Black', sans-serif
+	color: #445678
+	@media (max-width: 575.98px) 
+		font-size: 27px
+
+.h3, h3
+	font-size: 25px
+	font-weight: 600 
+
+.h4, h4
+	font-size: 24px
+	font-weight: bold 
+	text-transform: uppercase
+	font-family: 'Akkurat-Bold', sans-serif
+	color: #E66125
+	@media (max-width: 575.98px)
+		font-size: 18px
+
+.h5, h5
+	font-size: 18px
+	font-weight: bold 
+	color: #FFF
+
+.h6, h6
+	font-size: 14px
+	font-weight: bold 
+	color: #445678
+	text-transform: uppercase
+
+.btn-pitch 
+	display: inline-block
+	text-transform: uppercase
+	font-size: 13px
+	background: #FFF
+	transition: $transition
+	font-family: 'Akkurat-Bold', sans-serif
+	color: #445678
+	letter-spacing: 1.5px
+	padding: 11px 18px
+	border-radius: 100px
+	border: 1px solid #445678
+	@media (max-width: 1199.98px)
+		padding: 5px 18px
+	&:focus
+		box-shadow: none
+
+.search-sign-block-left
+	@media (min-width: 1200px) 
+		padding: 26px 42px 26px 0
+		border-right: 1px solid #D6D6D6
+	.a-search 
+		display: inline-block
+		font-size: 13px
+		text-transform: uppercase
+		color:  #445678 	 	
+		text-align: center
+		letter-spacing: 1.5px
+		@media (min-width: 1200px)
+			min-width: 70px
+
+.search-sign-block-right
+	border-left: 1px solid #D6D6D6
+	padding: 26px 0 26px 42px
+	.a-sign, .a-pitch
+		display: inline-block
+		font-size: 13px
+		text-transform: uppercase
+		color:  #445678
+		min-width: 70px
+		text-align: center
+		letter-spacing: 1.5px
+	.a-pitch 
+		display: none
+
+.page-navbar
+	color: #445678
+	right: 0
+	left: 0
+	position: absolute
+	background: #FFF
+	top: -99px
+	margin-top: 99px
+	z-index: 999
+	.navbar-top
+		padding: 43px 16px
+		border-bottom: 1px solid #D6D6D6
+	.navbar-bottom
+		border-bottom: 1px solid #D6D6D6
+		.navbar 
+			padding: 0
+			@media (max-width: 1199.98px) 
+				padding: 24px 10px
+			@media (max-width: 767.98px) 
+				padding: 17px 4px
+		.navbar-collapse 
+		.navbar-brand-koinesune	
+			img	
+				width: 111px
+			@media (min-width: 1200px) 
+				display: none
+		.navbar-nav-1
+			@media (max-width: 1199.98px)
+				margin-top: 24px
+				border-top: 1px solid #D6D6D6
+				@media (max-width: 767.98px) 
+					margin-top: 17px
+			.nav-item
+				.nav-link
+					display: inline-block
+					padding: 8px 24px
+					transition: $transition
+					color:  #445678 	
+					font-size: 13px
+					text-transform: uppercase
+					letter-spacing: 1px
+					@media (max-width: 1199.98px)
+						padding: 6px 0
+						font-weight: 500
+						font-size: 15px
+					&:hover 
+						opacity: .6
+	&.fixed-top
+		position: fixed
+		top: 0
+		margin-top: 0
+		transition: top .5s
+		.navbar-top
+			display: none !important
+		.navbar-bottom 
+			.navbar 
+				@media (min-width: 1200px)
+					padding: 20px 0
+			.navbar-brand-koinesune	
+				@media (min-width: 1200px)
+					display: block
+					img	
+						width: 140px
+			.search-sign-block-left
+				@media (min-width: 1200px)
+					display: none
+			.search-sign-block-right
+				padding: 0
+				border-left: 0
+				&:before 
+					display: none
+				.a-sign 
+					display: none
+				.a-pitch 
+					display: block	
+					font-weight: bold
+					border: 1px solid #445678
+					padding: 9px 17px
+					border-radius: 100px
+
+.sandwich
+	display: inline-block
+	color: #445678
+	cursor: pointer
+	transition: none
+	padding: 0
+	border: 0
+	background-color: #FFF
+	&:hover 
+		opacity: .6
+	&:before
+		width: 20px
+	span
+		width: 20px
+	&:after
+		width: 20px
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 4px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 2px solid #445678
+		margin-left: auto
+	&:not(.collapsed)
+		&:before
+			transform: translateX(3px) translateY(-1px) rotate(-45deg)
+			width: 20px
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: translateX(3px) translateY(1px) rotate(45deg)
+			width: 20px
+	&:hover 
+		opacity: .8
+
+.dropdown-1
+	position: static		
+	.dropdown-toggle 
+		&:after 
+			display: none
+	.dropdown-menu 
+		margin-top: 0
+		padding: 0
+		border-radius: 0
+		top: -31px
+		left: 0
+		right: 0
+		border: 0
+		@media (max-width: 1199.98px) 
+			top: 78px
+			border-bottom: 1px solid #D6D6D6
+		@media (max-width: 767.98px) 
+			top: 66px
+		.form-control 
+			border-radius: 0
+			height: 30px
+			font-size: 14px
+			color: #445678
+			border: 0
+			font-weight: 500
+			padding: 6px 35px 6px 10px
+			&::-webkit-input-placeholder
+				color: #D6D6D6
+			&::-moz-placeholder
+				color: #D6D6D6
+			&:-ms-input-placeholder
+				color: #D6D6D6
+			&:focus
+				box-shadow: none
+
+.form-go
+	position: relative
+	button
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		color: #445678
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+		padding: 0
+		font-size: 13px
+		font-weight: bold
+		&:hover
+			opacity: .6
+
+.fa-search
+	display: inline-block
+	color: #445678
+	font-size: 12px	
+	padding: 4px
+	&:hover 
+		color: #445678
+	@media (min-width: 1200px)
+		display: none
+
+.dropdown-2
+	.dropdown-toggle
+		position: relative
+		padding-right: 40px !important
+		&:after 
+			display: none
+	.dropdown-menu
+		margin-top: 0
+		top: 110%
+		left: 24px
+		border-radius: 0
+		border: 1px solid #445678
+		background-color: #FFF
+		@media (max-width: 1199.98px)
+			border: 0
+		.dropdown-item
+			font-size: 13px
+			padding: 8px 16px
+			color: #445678
+			text-transform: uppercase
+			@media (max-width: 1199.98px)
+				font-size: 14px
+			@media (max-width: 575.98px)
+				white-space: initial !important
+			&:hover, &:active
+				background-color: #FFF !important
+				opacity: .6
+	.fa-chevron-right
+		position: absolute
+		top: 16px
+		transform: translateY(-50%) rotate(90deg)
+		right: 25px
+		transition: $transition
+		font-size: 9px
+		@media (max-width: 1199.98px)
+			top: 14px
+
+.dropdown-about
+	letter-spacing: 2px
+	.dropdown-menu
+		font-size: 13px
+		left: 16px
+		letter-spacing: initial
+	.fa-chevron-right
+		top: 19px
+
+.footer 
+	padding: 75px 0 60px
+	background: #E76225
+	margin-top: auto
+	color: #FFF
+	font-size: 15px
+	letter-spacing: 1.5px
+	text-transform: uppercase
+	@media (max-width: 991.98px)
+		padding: 40px 0
+	a 
+		display: block
+		color: #FFF
+		padding-bottom: 8px
+	
+.bg-img
+	background-size: cover
+	background-position: center center
+	height: auto
+
+.bg-img-278
+	height: 278px
+	position: relative
+	.farming
+		position: absolute 
+		left: 26px
+		right: 26px
+		bottom: 26px
+		color: #FFF
+		line-height: 1.2
+		z-index: 3
+		a  
+			color: #FFF
+	&:after 
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.1%, rgba(0, 0, 0, 0.56) 100%)
+		z-index: 2
+
+.bg-img-550
+	min-height: 550px
+	position: relative
+	padding: 75px 42px 42px
+	@media (max-width: 767.98px)
+		padding-top: 42px
+	@media (max-width: 575.98px)
+		padding: 25px 15px
+	.farming
+		position: relative
+		color: #FFF
+		z-index: 3
+		a  
+			color: #FFF
+	&:after 
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: linear-gradient(270deg, #535639 0%, rgba(83, 86, 57, 0) 100%)
+		z-index: 2
+
+@media (min-width: 1200px)
+	.w-300 
+		width: 300px
+
+.mt-250
+	margin-top: 276px
+	@media (max-width: 1199.98px)
+		margin-top: 116px
+	@media (max-width: 767.98px)
+		margin-top: 101px
+
+.mt-80
+	margin-top: -80px
+	@media (max-width: 767.98px)
+		margin-top: 0
+
+.block-downtime
+	padding-top: 24px
+	padding-bottom: 24px
+	&:not(:last-child) 
+		border-bottom: 1px solid #E7E7E7
+
+.section-inbox
+	padding-top: 56px
+	padding-bottom: 56px
+	color: #FFF
+	background: #054062
+	&.section-inbox-2
+		padding-top: 40px
+		padding-bottom: 35px
+	.subscribe-title
+		position: relative
+		line-height: 1
+		z-index: 2
+		font-size: 40px
+		font-weight: bold 
+		@media (max-width: 575.98px)
+			font-size: 30px
+	.subscribe-title-2
+		font-size: 36px
+		@media (max-width: 575.98px)
+			font-size: 30px
+
+.form-modal
+	position: relative
+	z-index: 2
+	.form-search-modal
+		border-radius: 0
+		height: 32px
+		font-size: 13px
+		font-weight: 700
+		font-family: 'Roboto', sans-serif
+		color: #445678
+		background: #FFF
+		padding: 8px 11px
+		border: 0
+		margin-right: 13px
+		&::-webkit-input-placeholder
+			color: #B8B8B8
+		&::-moz-placeholder
+			color: #B8B8B8
+		&:-ms-input-placeholder
+			color: #B8B8B8
+		&:focus
+			box-shadow: none
+
+.btn-subscribe
+	transition: $transition
+	background: #FFF
+	border: none
+	height: 32px
+	text-transform: uppercase
+	font-family: 'Roboto', sans-serif
+	color: #000
+	padding: 8px 12px
+	font-size: 13px
+	font-weight: bold
+	&:hover
+		opacity: .6
+
+.btn-subscribe-2
+	background: transparent
+	color: #FFF
+	letter-spacing: 1.5px
+
+.img-wrap 
+	overflow: hidden
+	transition: $transition
+	.bg-wrap
+		transition: $transition
+	@media (min-width: 1200px)
+		&:hover
+			.bg-wrap
+				transform: scale(1.1) 
+
+.breadcrumb
+	background: transparent
+	font-size: 24px
+	text-transform: uppercase
+	font-family: 'Akkurat-Bold', sans-serif
+	@media (max-width: 575.98px)
+		font-size: 16px
+	.breadcrumb-item
+		+ .breadcrumb-item
+			padding-left: 8px
+			&:before
+				content: ">"
+				color: #E76225
+				padding-right: 8px
+		a
+			color: #E76225
+			&:hover
+				opacity: .6
+		&.active 
+			color: #E76225
+
+// CMS
+
+.body-dasboard
+	background: #f0f3f6
+	min-height: 100vh
+	transition: $transition
+	padding-top: 62px
+	@media (min-width: 992px)
+		padding-left: 250px
+	&.menubar-dashboard
+		@media (min-width: 992px)
+			padding-left: 0
+			.sidebar-1
+				margin-left: -250px
+		@media (max-width: 991.98px)
+			overflow: hidden
+			transform: translateX(250px)
+
+.daterangepicker
+	@media (max-width: 991.98px)
+		left: -230px !important		
+
+.sidebar-1, .navbar-dashboard, .content
+	transition: $transition
+
+.navbar-dashboard
+	background: #FFF
+	padding: 16px 20px
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
+	@media (max-width: 575.98px)	
+		padding-left: 15px
+		padding-right: 15px
+
+.avatar
+	width: 30px
+	height: 30px
+	border-radius: 4px
+	background-color: #DEDEDE
+	background-size: cover
+	background-position: center center
+	display: block
+
+.sidebar-1
+	position: fixed
+	width: 250px
+	top: 0
+	bottom: 0
+	left: 0
+	max-height: 100vh
+	color: #445678
+	display: flex
+	flex-direction: column
+	z-index: 1040
+	background-color: #FFF
+	@media (max-width: 991.98px)	
+		left: auto
+		right: 100%
+
+.sidebar-top
+	padding: 14.5px 20px
+	.logo 
+		vertical-align: middle
+		img 
+			width: 125px
+			height: 33px
+
+.sidebar-bottom
+	flex-grow: 1
+	border-top: 1px solid #f4f4f4
+	overflow: auto
+	padding: 22px 20px 70px
+	box-shadow: 1px 2px 1px rgba(0, 0, 0, .1)
+	@media (max-width: 991.98px)
+		box-shadow: none
+		border-right: 1px solid #f4f4f4
+	&::-webkit-scrollbar
+		display: none
+	.accordion-wrap
+		padding-bottom: 20px 
+	.block
+		padding: 12px 0
+		@media (max-width: 767.98px)
+			padding: 8px 0
+		.dashboard
+			display: inline-block
+			font-size: 20px
+			text-transform: uppercase
+			font-weight: bold		
+			@media (max-width: 991.98px)
+				font-size: 16px
+			&:hover
+				opacity: 0.7	
+			&.dashboard-highlighted
+				position: relative
+				&:after 
+					content: ""
+					position: absolute
+					bottom: 2px
+					left: 0
+					width: 100%
+					height: 3px
+					background: #f96114
+
+.sandwich-dashboard
+	color: #445678
+	display: block
+	cursor: pointer
+	padding: 0
+	border: 0
+	background: transparent
+	transition: $transition
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 4px
+	span, &:before, &:after
+		width: 20px
+		display: block
+		transition: $transition
+		transform-origin: left center
+		border-top: 2px solid
+	&.active
+		&:before
+			transform: translateX(3px) translateY(-1px) rotate(45deg)
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: translateX(3px) translateY(1px) rotate(-45deg)
+	&:hover 
+		opacity: .8
+#sandwich-dashboard
+	&.active
+		color: initial
+		transform: translateX(60px)
+	@media (max-width: 991.98px)
+		color: initial
+		transform: translateX(60px)
+	@media (max-width: 575.98px)
+		transform: translateX(55px) !important
+
+.story-switch
+	padding: 8px
+	border-radius: 8px
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .1)
+
+.new-story, .select-story
+	height: 30px
+	font-size: 14px
+	border-radius: 5px
+	font-weight: bold
+	color: #000
+	cursor: pointer
+	padding: 2px 12px
+	border: 0
+	&:focus
+		box-shadow: none
+	&.select-story
+		background: #f0f3f6 url(../img/arrow.png) no-repeat right 0.75rem center/10px 6px
+	&.new-story
+		line-height: 28px
+		text-transform: uppercase
+		display: block
+		background: #FFF
+		&:hover, &.active
+			background: #f0f3f6 
+			opacity: 1
+
+.form-control-pitches
+	font-size: 14px
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .1)
+	padding: 4px 60px
+	border: 0
+	border-radius: 8px
+	height: 46px
+	cursor: pointer
+	&::-webkit-input-placeholder
+		color: #445678
+	&::-moz-placeholder
+		color: #445678
+	&:-ms-input-placeholder
+		color: #445678
+	&:focus
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .1)
+
+.calendar-pitches, .to-from
+	position: absolute 
+	top: 50%
+	transform: translateY(-50%)
+	pointer-events: none
+	&.calendar-pitches
+		right: 10px
+	&.to-from
+		left: 10px
+
+.form-check-label
+	cursor: pointer
+	margin-bottom: 2px
+	.title 
+		font-size: 14px
+	input[type="radio"]
+		display: none
+		~ .f
+			display: inline-block
+			width: 14px
+			height: 14px
+			cursor: pointer
+			margin-right: 2px
+			border: 1px solid #445678
+			border-radius: 100px
+			position: relative
+		&:checked
+			~ .f
+				transition: $transition
+				background: #445678
+				color: #445678
+				&:before 
+					content: ''
+					width: 10px
+					height: 10px
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					border: 2px solid #fff
+					border-radius: 100px
+
+.content
+	padding: 22px 30px 80px
+	@media (max-width: 991.98px)
+		padding: 22px 20px 80px
+	@media (max-width: 575.98px)
+		padding: 22px 15px 80px
+
+.cart
+	background: #FFF
+	border-radius: 16px
+	box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .35)
+	overflow: hidden
+
+.cart-small
+	height: 100%
+	display: flex
+	flex-direction: column
+	.block
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		padding: 10px 20px 20px
+		@media (max-width: 575.98px)
+			padding: 10px 15px 20px
+
+.cart-info
+	background: #FFF
+	border-radius: 8px
+	text-align: center
+	color: #445678
+	height: 100%
+	display: flex
+	flex-direction: column
+	border: 2px solid
+	&.cart-info-orange
+		border-color: #f96114
+	&.cart-info-violet
+		border-color: #b401fc
+	&.cart-info-blue
+		border-color: #1ee5ce
+	&.cart-info-gray
+		border-color: #d5d5d5
+	.block
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		padding: 25px
+		@media (max-width: 575.98px)
+			padding: 15px
+	.number
+		font-size: 34px
+		line-height: 1
+		font-weight: bold
+		font-family: 'Roboto', sans-serif
+
+.cart-content
+	padding: 30px
+	@media (max-width: 575.98px)
+		padding: 15px
+
+.title-dashboard
+	font-size: 28px
+	font-family: 'NeuzeitGro-Black', sans-serif
+	line-height: 1
+	margin-bottom: 16px
+	@media (max-width: 575.98px)
+		font-size: 24px
+
+.comment-dashboard
+	font-family: 'NeuzeitGro-Black', sans-serif
+	font-size: 24px
+	color: #445678
+
+.title-more
+	font-size: 22px
+	color: #445678
+	font-weight: bold
+	text-transform: uppercase	
+
+.tabs-stories
+	border: 0
+	.nav-link
+		padding: 2px 8px
+		border: 0
+		background: initial
+		font-size: 14px
+		&:hover, &.active
+			opacity: 1
+			font-weight: bold
+			background: initial
+
+.table-stories
+	min-width: 500px
+	font-size: 13px
+	margin-bottom: 0 !important
+	thead
+		th
+			padding: 4px 20px
+			@media (max-width: 1199.98px)
+				padding: 4px 14px
+	tbody
+		tr:not(:last-child)
+			border-bottom: 1px solid #dcdcdc
+		th, td
+			padding: 10px 20px
+			@media (max-width: 1199.98px)
+				padding: 10px 14px
+	.date, .name
+		white-space: nowrap		
+
+.table-dashboard
+	font-size: 14px
+	min-width: 390px
+	.title 
+		font-weight: bold
+	thead
+		th
+			padding: 6px 24px
+			@media (max-width: 1199.98px)
+				padding: 4px 16px
+	tbody
+		th, td
+			padding: 12px 24px
+			@media (max-width: 1199.98px)
+				padding: 10px 16px
+
+// .o-hidden
+// 	@media (max-width: 991.98px)
+// 		overflow: hidden
+
+.w-1550
+	@media (min-width: 1950px)
+		max-width: 1400px
+		margin-left: auto
+		margin-right: auto
+	&.display-flex 
+		display: flex
+		@media (max-width: 1949.98px)
+			display: block 

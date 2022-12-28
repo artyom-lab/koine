@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Koinesune</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-dasboard">
+
+	<aside class="sidebar-1">
+		<div class="sidebar-top">
+			<div class="row row-4 align-items-center">
+				<div class="col">
+					<a class="logo" href="#!">
+						<img src="img/logo-dashboard.png" alt="">
+						<span class="align-middle ml-2">CMS</span>
+					</a>
+				</div>
+				<div class="col-auto fz-0">
+					<button class="sandwich-dashboard" id="sandwich-dashboard">
+				    <span></span>
+				  </button>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-bottom">
+			<div class="story-switch mb-4">
+				<div class="row row-4 align-items-center">
+					<div class="col-6">
+						<a href="#!" class="new-story">NEW</a> 
+					</div>
+					<div class="col-6">
+						<select class="custom-select select-story">
+							<option selected="">Story</option>
+							<option value="1">Story 1</option>
+							<option value="2">Story 2</option>
+							<option value="3">Story 3</option>
+						  </select>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<a href="#!" class="dashboard dashboard-highlighted">Dashboard</a>
+			</div>
+			<nav class="accordion-wrap">
+				<div class="accordion" id="accordionExample">
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseOne">Stories</a>
+						<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+							<div class="mt-2 mb-4">
+								<div class="fz-14 mb-1">Published</div>
+								<div class="position-relative mb-2">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">To</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="position-relative">
+									<input type="text" class="form-control form-control-pitches" name="birthday1" id="reportrange-pitches">
+									<span class="to-from">From</span>
+									<img src="img/calendar.png" class="calendar-pitches" alt="" width="28">
+								</div>
+								<div class="mt-4">
+									<div class="fz-14 mb-1">Story Tag</div>
+									<div class="form-group">
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1" checked="">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Beyond Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Spotlight</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">The Hub</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Editorial</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Rethinking Church</span>
+	                  </label><br>
+	                  <label class="form-check-label">       
+	                    <input type="radio" name="keywords1">
+	                    <span class="align-middle f"></span>
+	                    <span class="align-middle title">Lessons Learned</span>
+	                  </label><br>
+	                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseTwo">Forum</a>
+						<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseThree">Events</a>
+						<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+					<div class="block">
+						<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFour">Administration</a>
+						<div id="collapseFour" class="collapse" data-parent="#accordionExample">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</aside>
+
+	<header class="navbar navbar-dashboard fixed-top">
+		<a href="#!" class="avatar ml-auto" style="background-image: url(img/avatar.jpg)"></a>
+	</header>
+
+	<section class="section w-1550 display-flex">
+		<div class="content">
+			<div class="row mt-3">
+				<div class="col-sm-6 col-xl-3 mb-4">
+					<div class="cart-info cart-info-orange">
+						<div class="block">
+							<div class="number pb-2">3</div>
+							<div class="fz-14">Stories Published this Week</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xl-3 mb-4">
+					<div class="cart-info cart-info-violet">
+						<div class="block">
+							<div class="number pb-2">2</div>
+							<div class="fz-14">Webinars Published this Week</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xl-3 mb-4">
+					<div class="cart-info cart-info-blue">
+						<div class="block">
+							<div class="number pb-2">5</div>
+							<div class="fz-14">Upcoming Events this Week</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xl-3 mb-4">
+					<div class="cart-info cart-info-gray">
+						<div class="block">
+							<div class="number pb-2">-</div>
+							<div class="fz-14">Some Other Data Point</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-2">
+				<div class="col-xl-6 mb-4">
+			  	<div class="cart pt-3 flex-grow-1">
+			  		<div class="px-3 px-xl-4 my-2 fz-18 font-weight-bold">Recent Stories</div>
+						<div class="table-responsive pb-3">
+							<table class="table table-stories table-dashboard table-borderless">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Published</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="title">Ut enim ipsum dolor sit amet consectetur, adipisicing elit. Sed quas maiores</td>
+										<td class="date">Nov. 19, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem, ipsum dolor sit amet consectetur, adipisicing elit</td>
+										<td class="date">Nov. 17, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+										<td class="date">Nov. 14, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae. Est beatae</td>
+										<td class="date">Nov. 13, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur</td>
+										<td class="date">Nov. 11, 2022</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			  	</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+			  	<div class="cart pt-3 flex-grow-1">
+			  		<div class="px-3 px-xl-4 my-2 fz-18 font-weight-bold">Upcoming Events</div>
+						<div class="table-responsive pb-3">
+							<table class="table table-stories table-dashboard table-borderless">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Published</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="title">Ut enim ipsum dolor sit amet consectetur, adipisicing elit. Sed quas maiores</td>
+										<td class="date">Nov. 19, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem, ipsum dolor sit amet consectetur, adipisicing elit</td>
+										<td class="date">Nov. 17, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+										<td class="date">Nov. 14, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae. Est beatae</td>
+										<td class="date">Nov. 13, 2022</td>
+									</tr>
+									<tr>
+										<td class="title">Lorem ipsum dolor sit amet consectetur</td>
+										<td class="date">Nov. 11, 2022</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			  	</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</section>
+		
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
