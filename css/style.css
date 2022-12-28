@@ -1080,6 +1080,10 @@ hr {
       .table-dashboard tbody th, .table-dashboard tbody td {
         padding: 10px 16px; } }
 
+@media (max-width: 991.98px) {
+  .o-hidden {
+    overflow: hidden; } }
+
 @media (min-width: 1950px) {
   .w-1550 {
     max-width: 1400px;
