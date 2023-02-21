@@ -20,6 +20,16 @@
 $transition: .3s
 
 $color-blue: #445678
+$color-orange: #E86B32
+$color-black: #000
+$color-white: #FFF
+$color-border: #EAEAEA
+$color-hr: #D6D6D6
+$color-footer: #E76225
+$color-inbox: #054062
+$color-gray: #f0f3f6
+$color-lightblue: #00a1fe
+$color-red: #e10700
 
 * 
 	outline: none !important
@@ -29,13 +39,13 @@ img
 	height: auto
 
 .text-black 
-	color: #000 !important
+	color: $color-black !important
 
 .text-orange 
-	color: #E86B32 !important
+	color: $color-orange !important
 
 .text-blue
-	color: #445678 !important
+	color: $color-blue !important
 
 .text-gray 
 	color: #ABABAB !important
@@ -45,9 +55,9 @@ img
 
 body 
 	font-family: 'NeuzeitGro-Regular', sans-serif
-	background-color: #FFF
+	background-color: $color-white
 	display: flex
-	color: #000
+	color: $color-black
 	flex-direction: column
 	min-height: 100vh
 	&.menubar-in
@@ -56,14 +66,14 @@ body
 a 
 	text-decoration: none !important
 	transition: $transition
-	color: #445678
+	color: $color-blue
 	&:hover 
-		color: #445678
+		color: $color-blue
 		opacity: .7
 	&.black 
-		color: #000
+		color: $color-black
 		&:hover 
-			color: #000	
+			color: $color-black	
 
 .container 
 	@media (min-width: 992px)
@@ -122,35 +132,39 @@ a
 
 .bl-1
 	@media (min-width: 1200px)
-		border-left: 1px solid #EAEAEA
+		border-left: 1px solid $color-border
 
 .br-1
 	@media (min-width: 992px)
-		border-right: 1px solid #EAEAEA
+		border-right: 1px solid $color-border
+		&:last-child
+			border-right: 0
 
 .br-2
 	@media (min-width: 768px)
-		border-right: 1px solid #EAEAEA
+		border-right: 1px solid $color-border
+		&:last-child
+			border-right: 0
 
 .bt-1
 	@media (min-width: 992px)
-		border-top: 1px solid #EAEAEA
+		border-top: 1px solid $color-border
 
 .bt-2
 	@media (max-width: 767.98px)
-		border-top: 1px solid #EAEAEA
+		border-top: 1px solid $color-border
 
 hr 
-	border-color: #EAEAEA
+	border-color: $color-border
 
 .hr 
-	border-color: #D6D6D6
+	border-color: $color-hr
 
 .short-hr
 	display: inline-block
 	width: 31px
 	height: 1px
-	background: #E86B32
+	background: $color-orange
 
 .roboto
 	font-family: 'Roboto', sans-serif
@@ -190,12 +204,12 @@ hr
 
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
 	a 
-		color: #445678
+		color: $color-blue
 
 .h1, h1
 	font-size: 42px
 	font-family: 'NeuzeitGro-Black', sans-serif
-	color: #445678
+	color: $color-blue
 	line-height: 1
 	@media (max-width: 575.98px) 
 		font-size: 30px
@@ -203,7 +217,7 @@ hr
 .h2, h2
 	font-size: 40px
 	font-family: 'NeuzeitGro-Black', sans-serif
-	color: #445678
+	color: $color-blue
 	@media (max-width: 575.98px) 
 		font-size: 27px
 
@@ -223,53 +237,51 @@ hr
 .h5, h5
 	font-size: 18px
 	font-weight: bold 
-	color: #FFF
+	color: $color-white
 
 .h6, h6
 	font-size: 14px
 	font-weight: bold 
-	color: #445678
+	color: $color-blue
 	text-transform: uppercase
 
 .btn-pitch 
 	display: inline-block
 	text-transform: uppercase
 	font-size: 13px
-	background: #FFF
+	background: $color-white
 	transition: $transition
 	font-family: 'Akkurat-Bold', sans-serif
-	color: #445678
+	color: $color-blue
 	letter-spacing: 1.5px
 	padding: 11px 18px
 	border-radius: 100px
-	border: 1px solid #445678
+	border: 1px solid $color-blue
 	@media (max-width: 1199.98px)
-		padding: 5px 18px
+		padding: 8px 18px
 	&:focus
 		box-shadow: none
 
 .search-sign-block-left
 	@media (min-width: 1200px) 
-		padding: 26px 42px 26px 0
-		border-right: 1px solid #D6D6D6
+		padding: 16px 0
 	.a-search 
 		display: inline-block
 		font-size: 13px
 		text-transform: uppercase
-		color:  #445678 	 	
+		color:  $color-blue		
 		text-align: center
 		letter-spacing: 1.5px
 		@media (min-width: 1200px)
 			min-width: 70px
 
 .search-sign-block-right
-	border-left: 1px solid #D6D6D6
-	padding: 26px 0 26px 42px
+	padding: 16px 0 
 	.a-sign, .a-pitch
 		display: inline-block
 		font-size: 13px
 		text-transform: uppercase
-		color:  #445678
+		color:  $color-blue
 		min-width: 70px
 		text-align: center
 		letter-spacing: 1.5px
@@ -277,19 +289,19 @@ hr
 		display: none
 
 .page-navbar
-	color: #445678
+	color: $color-blue
 	right: 0
 	left: 0
 	position: absolute
-	background: #FFF
+	background: $color-white
 	top: -99px
 	margin-top: 99px
 	z-index: 999
 	.navbar-top
 		padding: 43px 16px
-		border-bottom: 1px solid #D6D6D6
+		border-bottom: 1px solid $color-hr
 	.navbar-bottom
-		border-bottom: 1px solid #D6D6D6
+		border-bottom: 1px solid $color-hr
 		.navbar 
 			padding: 0
 			@media (max-width: 1199.98px) 
@@ -305,15 +317,21 @@ hr
 		.navbar-nav-1
 			@media (max-width: 1199.98px)
 				margin-top: 24px
-				border-top: 1px solid #D6D6D6
-				@media (max-width: 767.98px) 
-					margin-top: 17px
+				border-top: 1px solid $color-hr
+			@media (max-width: 767.98px) 
+				margin-top: 17px
+			@media (min-width: 1200px) 
+				border-left: 1px solid $color-hr
+				border-right: 1px solid $color-hr
+				margin: 0 42px
 			.nav-item
+				@media (min-width: 1200px) 
+					padding: 19px 0
 				.nav-link
 					display: inline-block
-					padding: 8px 24px
+					padding: 8px 14px
 					transition: $transition
-					color:  #445678 	
+					color:  $color-blue	
 					font-size: 13px
 					text-transform: uppercase
 					letter-spacing: 1px
@@ -334,6 +352,13 @@ hr
 			.navbar 
 				@media (min-width: 1200px)
 					padding: 20px 0
+			.navbar-nav-1
+				margin-left: 16px
+				margin-right: 16px
+				border-left: 0
+				border-right: 0
+				.nav-item
+					padding: 0
 			.navbar-brand-koinesune	
 				@media (min-width: 1200px)
 					display: block
@@ -344,7 +369,6 @@ hr
 					display: none
 			.search-sign-block-right
 				padding: 0
-				border-left: 0
 				&:before 
 					display: none
 				.a-sign 
@@ -352,18 +376,18 @@ hr
 				.a-pitch 
 					display: block	
 					font-weight: bold
-					border: 1px solid #445678
-					padding: 9px 17px
+					border: 1px solid $color-blue
+					padding: 11px 17px
 					border-radius: 100px
 
 .sandwich
 	display: inline-block
-	color: #445678
+	color: $color-blue
 	cursor: pointer
 	transition: none
 	padding: 0
 	border: 0
-	background-color: #FFF
+	background-color: $color-white
 	&:hover 
 		opacity: .6
 	&:before
@@ -380,7 +404,7 @@ hr
 		display: block
 		transition: $transition
 		transform-origin: right center
-		border-top: 2px solid #445678
+		border-top: 2px solid $color-blue
 		margin-left: auto
 	&:not(.collapsed)
 		&:before
@@ -410,23 +434,23 @@ hr
 		border: 0
 		@media (max-width: 1199.98px) 
 			top: 78px
-			border-bottom: 1px solid #D6D6D6
+			border-bottom: 1px solid $color-hr
 		@media (max-width: 767.98px) 
 			top: 66px
 		.form-control 
 			border-radius: 0
 			height: 30px
 			font-size: 14px
-			color: #445678
+			color: $color-blue
 			border: 0
 			font-weight: 500
 			padding: 6px 35px 6px 10px
 			&::-webkit-input-placeholder
-				color: #D6D6D6
+				color: $color-hr
 			&::-moz-placeholder
-				color: #D6D6D6
+				color: $color-hr
 			&:-ms-input-placeholder
-				color: #D6D6D6
+				color: $color-hr
 			&:focus
 				box-shadow: none
 
@@ -437,7 +461,7 @@ hr
 		position: absolute
 		background: none
 		border: none
-		color: #445678
+		color: $color-blue
 		top: 50%
 		transform: translateY(-50%)
 		right: 10px
@@ -449,46 +473,45 @@ hr
 
 .fa-search
 	display: inline-block
-	color: #445678
+	color: $color-blue
 	font-size: 12px	
 	padding: 4px
 	&:hover 
-		color: #445678
+		color: $color-blue
 	@media (min-width: 1200px)
 		display: none
 
 .dropdown-2
 	.dropdown-toggle
 		position: relative
-		padding-right: 40px !important
+		padding-right: 28px !important
 		&:after 
 			display: none
 	.dropdown-menu
 		margin-top: 0
-		top: 110%
-		left: 24px
+		top: 100%
 		border-radius: 0
-		border: 1px solid #445678
-		background-color: #FFF
+		border: 1px solid $color-blue
+		background-color: $color-white
 		@media (max-width: 1199.98px)
 			border: 0
 		.dropdown-item
 			font-size: 13px
 			padding: 8px 16px
-			color: #445678
+			color: $color-blue
 			text-transform: uppercase
 			@media (max-width: 1199.98px)
 				font-size: 14px
 			@media (max-width: 575.98px)
 				white-space: initial !important
 			&:hover, &:active
-				background-color: #FFF !important
+				background-color: $color-white !important
 				opacity: .6
 	.fa-chevron-right
 		position: absolute
 		top: 16px
 		transform: translateY(-50%) rotate(90deg)
-		right: 25px
+		right: 16px
 		transition: $transition
 		font-size: 9px
 		@media (max-width: 1199.98px)
@@ -505,9 +528,9 @@ hr
 
 .footer 
 	padding: 75px 0 60px
-	background: #E76225
+	background: $color-footer
 	margin-top: auto
-	color: #FFF
+	color: $color-white
 	font-size: 15px
 	letter-spacing: 1.5px
 	text-transform: uppercase
@@ -515,7 +538,7 @@ hr
 		padding: 40px 0
 	a 
 		display: block
-		color: #FFF
+		color: $color-white
 		padding-bottom: 8px
 	
 .bg-img
@@ -531,11 +554,11 @@ hr
 		left: 26px
 		right: 26px
 		bottom: 26px
-		color: #FFF
+		color: $color-white
 		line-height: 1.2
 		z-index: 3
 		a  
-			color: #FFF
+			color: $color-white
 	&:after 
 		content: ""
 		display: block
@@ -557,10 +580,10 @@ hr
 		padding: 25px 15px
 	.farming
 		position: relative
-		color: #FFF
+		color: $color-white
 		z-index: 3
 		a  
-			color: #FFF
+			color: $color-white
 	&:after 
 		content: ""
 		display: block
@@ -577,7 +600,7 @@ hr
 		width: 300px
 
 .mt-250
-	margin-top: 276px
+	margin-top: 300px
 	@media (max-width: 1199.98px)
 		margin-top: 116px
 	@media (max-width: 767.98px)
@@ -597,8 +620,8 @@ hr
 .section-inbox
 	padding-top: 56px
 	padding-bottom: 56px
-	color: #FFF
-	background: #054062
+	color: $color-white
+	background: $color-inbox
 	&.section-inbox-2
 		padding-top: 40px
 		padding-bottom: 35px
@@ -624,8 +647,8 @@ hr
 		font-size: 13px
 		font-weight: 700
 		font-family: 'Roboto', sans-serif
-		color: #445678
-		background: #FFF
+		color: $color-blue
+		background: $color-white
 		padding: 8px 11px
 		border: 0
 		margin-right: 13px
@@ -640,12 +663,12 @@ hr
 
 .btn-subscribe
 	transition: $transition
-	background: #FFF
+	background: $color-white
 	border: none
 	height: 32px
 	text-transform: uppercase
 	font-family: 'Roboto', sans-serif
-	color: #000
+	color: $color-black
 	padding: 8px 12px
 	font-size: 13px
 	font-weight: bold
@@ -654,7 +677,7 @@ hr
 
 .btn-subscribe-2
 	background: transparent
-	color: #FFF
+	color: $color-white
 	letter-spacing: 1.5px
 
 .img-wrap 
@@ -679,19 +702,19 @@ hr
 			padding-left: 8px
 			&:before
 				content: ">"
-				color: #E76225
+				color: $color-footer
 				padding-right: 8px
 		a
-			color: #E76225
+			color: $color-footer
 			&:hover
 				opacity: .6
 		&.active 
-			color: #E76225
+			color: $color-footer
 
 // CMS
 
 .body-dasboard
-	background: #f0f3f6
+	background: $color-gray
 	min-height: 100vh
 	transition: $transition
 	padding-top: 62px
@@ -711,7 +734,7 @@ hr
 	transition: $transition
 
 .navbar-dashboard
-	background: #FFF
+	background: $color-white
 	padding: 16px 20px
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
 	@media (max-width: 575.98px)	
@@ -738,7 +761,7 @@ hr
 	display: flex
 	flex-direction: column
 	z-index: 1040
-	background-color: #FFF
+	background-color: $color-white
 	@media (max-width: 991.98px)	
 		left: auto
 		right: 100%
@@ -836,21 +859,21 @@ hr
 	font-size: 14px
 	border-radius: 5px
 	font-weight: bold
-	color: #000
+	color: $color-black
 	cursor: pointer
 	padding: 2px 12px
 	border: 0
 	&:focus
 		box-shadow: none
 	&.select-story
-		background: #f0f3f6 url(../img/arrow.png) no-repeat right 0.75rem center/10px 6px
+		background: $color-gray url(../img/arrow.png) no-repeat right 0.75rem center/10px 6px
 	&.new-story
 		line-height: 28px
 		text-transform: uppercase
 		display: block
-		background: #FFF
+		background: $color-white
 		&:hover, &.active
-			background: #f0f3f6 
+			background: $color-gray
 			opacity: 1
 
 .form-control-pitches
@@ -909,7 +932,7 @@ hr
 					top: 50%
 					left: 50%
 					transform: translate(-50%, -50%)
-					border: 2px solid #fff
+					border: 2px solid $color-white
 					border-radius: 100px
 
 .content
@@ -920,7 +943,7 @@ hr
 		padding: 22px 15px 80px
 
 .cart
-	background: #FFF
+	background: $color-white
 	border-radius: 16px
 	box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .35)
 	overflow: hidden
@@ -938,7 +961,7 @@ hr
 			padding: 10px 15px 20px
 
 .cart-info
-	background: #FFF
+	background: $color-white
 	border-radius: 8px
 	text-align: center
 	color: $color-blue
@@ -1069,18 +1092,18 @@ hr
 			height: 400px
 
 .btn-create
-	background: #00a1fe
-	color: #FFF
+	background: $color-lightblue
+	color: $color-white
 	border: 0
 	border-radius: 8px
 	font-size: 14px
 	padding: 12px 24px
 	transition: $transition
 	&:hover
-		color: #FFF
+		color: $color-white
 		opacity: .7
 	&.btn-cancel
-		background: #e10700
+		background: $color-red
 
 .koine-upload-container
 	border-radius: 8px
@@ -1126,10 +1149,10 @@ hr
 	.form-control
 		position: relative
 		overflow: hidden
-		background: #FFF
+		background: $color-white
 		border: 0
 		.uploader-text
-			color: #000
+			color: $color-black
 			font-size: 14px
 		.uploader-description
 			font-size: 14px
@@ -1137,3 +1160,53 @@ hr
 			max-width: 238px
 			display: block
 			margin: 0 auto
+
+// PODCASTS/BOOKS
+
+.section-gray
+	background: #F4F4F4
+	padding: 65px 0 24px
+	font-family: 'Roboto', sans-serif
+	.title
+		font-size: 45px
+		color: $color-footer
+		@media (max-width: 991.98px)
+			font-size: 34px
+	.link-podcasts
+		color: $color-footer
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		font-weight: 900
+		&:hover
+			transform: translateX(3px)
+	.post-title
+		display: inline-block
+		font-weight: 900
+		font-size: 14px
+		margin-top: 12px
+		line-height: 1.2
+	.see-all
+		font-size: 24px
+		color: $color-black
+		font-family: 'Akkurat-Bold', sans-serif
+		@media (max-width: 991.98px)
+			font-size: 20px
+
+.book-box
+	text-align: center
+	display: inline-block
+	img 
+		height: 400px
+	.book-date
+		font-size: 24px
+		color: $color-black
+		@media (max-width: 991.98px)
+			font-size: 18px
+
+.row-10
+	margin-left: -10px
+	margin-right: -10px
+	> [class*='col']
+		padding-left: 10px
+		padding-right: 10px

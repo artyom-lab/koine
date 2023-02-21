@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,9 +31,7 @@
               <img class="logo" src="img/logo.png" alt="">
             </a>
           </div>
-          <div class="col-3 text-right">
-            <a href="#!" class="btn btn-pitch">PITCH A STORY</a>
-          </div>
+          <div class="col-3 text-right"></div>
         </div>
       </div>
     </div>
@@ -72,13 +71,16 @@
                 </div>  
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">BIG QUESTIONS</a>
+                <a class="nav-link" href="#!">BEYOND CHURCH</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">SPOTLIGHT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">BEYOND CHURCH</a>
+                <a class="nav-link" href="#!">THE HUB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">EDITORIAL</a>
               </li>
               <li class="nav-item dropdown dropdown-2 d-xl-none">
                 <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown">About<i class="fas fa-chevron-right"></i></a>
@@ -97,8 +99,7 @@
             </ul>
           </div>
           <div class="search-sign-block-right d-none d-xl-block order-xl-5">
-            <a href="#!" class="a-sign">Donate</a>
-            <a href="#!" class="a-sign a-pitch">PITCH A STORY</a>
+            <a href="#!" class="btn btn-pitch">PITCH A STORY</a>
           </div>
         </div>
       </div>
@@ -413,6 +414,74 @@
     </div>
   </section>
 
+  <section class="section-gray mt-5">
+    <div class="container">
+      <div class="row row-10 mb-5">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="title">Podcasts</div>
+          <p class="fz-14 lh-12 text-gray-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#!" class="link-podcasts">ALL PODCASTS ></a>
+        </div>
+        <div class="col-md-8">
+          <div class="row row-10 align-items-center">
+            <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+              <div class="img-wrap">
+                <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img5.jpg)">
+                </div>
+              </div>
+              <a href="#!" class="post-title black">Lorem ipsum dolor sit amet consectetur</a>
+            </div>
+            <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+              <div class="img-wrap">
+                <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img6.jpg)">
+                </div>
+              </div>
+              <a href="#!" class="post-title black">Lorem ipsum dolor sit amet consectetur</a>
+            </div>
+            <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+              <div class="img-wrap">
+                <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img7.jpg)">
+                </div>
+              </div>
+              <a href="#!" class="post-title black">Lorem ipsum dolor sit amet consectetur</a>
+            </div>
+            <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+              <div class="img-wrap">
+                <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img8.jpg)">
+                </div>
+              </div>
+              <a href="#!" class="post-title black">Lorem ipsum dolor sit amet consectetur</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <span class="title align-middle mr-4">Books</span>
+        <a href="#!" class="see-all align-middle">See all</a>
+      </div>
+      <div class="row row-3">
+        <div class="col-sm-6 col-lg-4 text-center mb-4">
+          <a href="#!" class="book-box">
+            <img src="img/club-1.jpg" alt="">
+            <div class="book-date mt-3">May 26</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center mb-4">
+          <a href="#!" class="book-box">
+            <img src="img/club-2.jpg" alt="">
+            <div class="book-date mt-3">May 19</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center mb-4">
+          <a href="#!" class="book-box">
+            <img src="img/club-3.jpg" alt="">
+            <div class="book-date mt-3">May 12</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="container py-4 mb-5">
       <hr>
@@ -576,6 +645,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="js/common.js"></script>
 
 </body>
