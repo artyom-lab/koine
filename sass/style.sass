@@ -250,17 +250,29 @@ hr
 	text-transform: uppercase
 	font-size: 13px
 	background: $color-white
+	margin: 2px
+	min-width: 100px
 	transition: $transition
 	font-family: 'Akkurat-Bold', sans-serif
 	color: $color-blue
 	letter-spacing: 1.5px
-	padding: 11px 18px
+	padding: 10px 14px
 	border-radius: 100px
 	border: 1px solid $color-blue
 	@media (max-width: 1199.98px)
 		padding: 8px 18px
-	&:focus
+	@media (max-width: 575.98px)
+		width: 100%
+		display: block
+	&:focus, &:hover
 		box-shadow: none
+		color: $color-white
+		background: $color-blue
+		opacity: 1
+
+.btn-pitch-blue
+	color: $color-white
+	background: $color-blue
 
 .search-sign-block-left
 	@media (min-width: 1200px) 
@@ -329,7 +341,7 @@ hr
 					padding: 19px 0
 				.nav-link
 					display: inline-block
-					padding: 8px 14px
+					padding: 8px 10px
 					transition: $transition
 					color:  $color-blue	
 					font-size: 13px
@@ -349,16 +361,24 @@ hr
 		.navbar-top
 			display: none !important
 		.navbar-bottom 
+			> .container 
+				max-width: 100%
 			.navbar 
 				@media (min-width: 1200px)
 					padding: 20px 0
 			.navbar-nav-1
-				margin-left: 16px
-				margin-right: 16px
 				border-left: 0
 				border-right: 0
+				@media (min-width: 1200px)
+					justify-content: left !important
+					margin-left: 16px
+					margin-right: 16px
 				.nav-item
 					padding: 0
+				.dropdown-search
+					@media (min-width: 1200px)
+						display: inline-block !important
+						font-weight: bold
 			.navbar-brand-koinesune	
 				@media (min-width: 1200px)
 					display: block
@@ -379,6 +399,8 @@ hr
 					border: 1px solid $color-blue
 					padding: 11px 17px
 					border-radius: 100px
+				.btn-adaptive
+					display: inline-block !important
 
 .sandwich
 	display: inline-block
@@ -480,6 +502,44 @@ hr
 		color: $color-blue
 	@media (min-width: 1200px)
 		display: none
+
+.dropdown-search
+	position: static		
+	.dropdown-toggle 
+		&:after 
+			display: none
+	.dropdown-menu 
+		background: #ededed
+		margin-top: 0
+		margin-left: -15px
+		margin-right: -15px
+		padding: 0
+		border-radius: 0
+		border-top: 1px solid $color-hr
+		border-bottom: 1px solid $color-hr
+		top: 82px
+		left: 0
+		right: 0
+		border: 0
+		.form-control 
+			border-radius: 0
+			height: 60px
+			font-size: 14px
+			font-weight: bold
+			color: $color-black
+			text-transform: uppercase
+			background: #ededed
+			border: 0
+			padding-left: 15px
+			padding-right: 40px
+			&::-webkit-input-placeholder
+				color: #b5b5b5
+			&::-moz-placeholder
+				color: #b5b5b5
+			&:-ms-input-placeholder
+				color: #b5b5b5
+			&:focus
+				box-shadow: none
 
 .dropdown-2
 	.dropdown-toggle
@@ -906,9 +966,10 @@ hr
 .form-check-label
 	cursor: pointer
 	margin-bottom: 2px
+	display: block
 	.title 
 		font-size: 14px
-	input[type="radio"]
+	input[type="radio"], input[type="checkbox"]
 		display: none
 		~ .f
 			display: inline-block
@@ -1210,3 +1271,7 @@ hr
 	> [class*='col']
 		padding-left: 10px
 		padding-right: 10px
+
+.block-tags
+	display: none
+	margin-left: 24px

@@ -25,6 +25,18 @@ $(document).ready(function () {
 	window.dispatchEvent(new Event('resize'));
 	});
 
+  $(function () {
+    $(".switcher").change(function() {
+    if ($(this).is(":checked")) {
+      $(this).parent('.form-check-label').siblings('.block-tags').show();
+
+    } else {
+      $(this).parent('.form-check-label').siblings('.block-tags').hide();
+
+    }
+    });
+  });
+
   Waves.attach('.btn-pitch, .btn-subscribe, .a-pitch');
   Waves.attach('.btn',  ['waves-light']);
   Waves.init();
